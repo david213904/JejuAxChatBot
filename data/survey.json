@@ -1,0 +1,70 @@
+{
+  "_note": "인터뷰 전 가안입니다. 인터뷰 후 문구, 보기, 태그를 수정하세요. Q2의 막힘 유형은 가설입니다.",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "AI를 어디까지 써 보셨나요?",
+      "purpose": "단계 판정",
+      "multiple": false,
+      "options": [
+        { "label": "써 본 적이 없어요", "tag": "stage0", "stage": 0 },
+        { "label": "궁금한 걸 가끔 물어봐요", "tag": "stage1", "stage": 1 },
+        { "label": "업무에 가끔 써요 (글쓰기, 정리 등)", "tag": "stage2", "stage": 2 },
+        { "label": "자주 쓰는 프롬프트나 템플릿이 있어요", "tag": "stage3", "stage": 3 },
+        { "label": "자동화나 직접 만든 도구가 있어요", "tag": "stage4", "stage": 4 }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "쓰면서 가장 막히는 점은 무엇인가요?",
+      "purpose": "막힘 유형 (인터뷰로 검증할 가설)",
+      "multiple": false,
+      "options": [
+        { "label": "어디서부터 시작할지 모르겠어요", "tag": "시작" },
+        { "label": "답이 마음에 안 들거나 틀려요", "tag": "품질" },
+        { "label": "내 업무에 어떻게 쓸지 모르겠어요", "tag": "연결" },
+        { "label": "도구가 너무 많아 뭘 써야 할지 모르겠어요", "tag": "선택" },
+        { "label": "개인정보·보안이 걱정돼요", "tag": "보안" },
+        { "label": "시작은 했는데 꾸준히 안 하게 돼요", "tag": "지속" }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "공부에 쓸 수 있는 시간은 얼마나 되나요?",
+      "purpose": "추천 형태 결정",
+      "multiple": false,
+      "options": [
+        { "label": "하루 10분", "tag": "time10" },
+        { "label": "하루 30분", "tag": "time30" },
+        { "label": "주말에 몰아서", "tag": "weekend" },
+        { "label": "하루 1시간 이상", "tag": "time60" }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "어떤 방식이 편하세요?",
+      "purpose": "제주AX단 교육 / 유튜브 분기",
+      "multiple": false,
+      "options": [
+        { "label": "직접 만나서 실습하는 교육", "tag": "오프라인" },
+        { "label": "온라인 영상으로 내 시간에", "tag": "온라인" },
+        { "label": "혼자 따라 하며 실습", "tag": "자율" },
+        { "label": "상관없어요", "tag": "무관" }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "지금 쓰고 있거나 쓸 수 있는 AI 도구를 모두 골라 주세요.",
+      "purpose": "추천할 도구 범위",
+      "multiple": true,
+      "options": [
+        { "label": "ChatGPT", "tag": "chatgpt" },
+        { "label": "Claude", "tag": "claude" },
+        { "label": "Gemini", "tag": "gemini" },
+        { "label": "Claude Code·Codex 같은 코딩 도구", "tag": "codingtool" },
+        { "label": "아직 없어요", "tag": "none" },
+        { "label": "잘 모르겠어요", "tag": "unknown" }
+      ]
+    }
+  ]
+}
